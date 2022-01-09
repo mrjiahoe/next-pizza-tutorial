@@ -1,6 +1,5 @@
 .container {
 	height: calc(100vh - 100px);
-	max-height: 500px;
 	background-color: #222;
 	display: flex;
 }
@@ -33,4 +32,27 @@
 
 .motto {
 	color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		height: auto;
+		text-align: center;
+	}
+
+	.item:first-child {
+		display: none;
+	}
+
+	.item {
+		flex-direction: column;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.text {
+		font-size: 20px;
+	}
 }
